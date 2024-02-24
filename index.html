@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link rel="stylesheet" href="font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+        :root{
+            --darkgreen:#0a3823;
+            --lightgreen:#198050;
+            --white:#fff;
+            --light:#dfebe4;
+        }
+        
+        
+        
+        *{margin: 0px; padding: 0px; font-family: system-ui;}
+        .col-3{width: 20%; float: left;}
+        .col-4{width: 33.3%; float: left;}
+        .col-2{width: 16%; float: left;}
+        .col-6{width: 50%; float: left;}
+        .container{width: 1200px; margin: 0 auto; max-width: 100%;}
+        .clearfix{clear: both;}
+        .banner{background:var(--darkgreen);
+            background-repeat: no-repeat; background-size: 627px;}
+        .logo{color: var(--white); font-weight: 500; padding:25px; font-style: italic;}
+        .nav{margin: 0 auto; width: 700px;}
+        .nav li{list-style: none;float: left; padding: 30px 26px; }
+        .nav li a{text-decoration: none; color: var(--white);}
+        .banner-img{width:97%; margin-bottom:-4px; }
+        .content{padding-top: 100px; padding-left: 100px;}
+        .heading{font-size: 50px; color: var(--white); padding-top: 60px;}
+        .btn{    
+            padding: 12px 35px;
+            background: var(--lightgreen);
+            border: none;
+            color: var(--white);
+            float: right;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+        .p1{
+            color: var(--white);
+            letter-spacing: 1px;
+            width: 500px;
+            line-height: 22px;
+            font-size: 14px;
+            margin-top: 3px;
+        }
+        .icon{width: 30px;
+            background: #b5b5b561;
+            padding: 10px;
+            border-radius: 10px;
+            margin-right: 30px;}
+        .heading-2{color: var(--darkgreen);text-align: center;}
+        .p2{text-align: center; margin-bottom: 50px; font-size: 14px;}
+        .box{width: 230px; padding: 25px; border: 1px solid #d1cbcb; text-align: center;
+        margin: 0 auto;}
+        .icon1{
+            font-size: 30px!important;
+            background: var(--darkgreen);
+            padding: 15px;
+            color: var(--white);
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+        .heading-3{font-weight: normal;}
+        .p3{font-size: 13px; letter-spacing: 1px; line-height: 18px; margin-bottom: 50px;}
+        .active{background: var(--darkgreen);color: var(--white);}
+        .active .icon1{background: var(--white); color: var(--darkgreen);}
+        .heading-4{font-size: 40px; color: var(--darkgreen); padding-top: 100px; }
+        .com-p{background: var(--light); padding: 50px 100px; width: 85%}
+		.com-l{background: var(--darkgreen); padding: 50px 25px; width: 85%}
+        .p4{font-size: 14px;letter-spacing: 2px; line-height: 20px;}
+        .green-sec{background: var(--darkgreen); background-repeat: no-repeat;
+        background-size: 627px;}
+        .foot-menu{margin-bottom: 50px;}
+        .foot-menu li{list-style: none; padding: 10px;}
+        .search{
+            border-radius: 25px;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--white);
+        }
+        .foot-menu li a{text-decoration: none; color: var(--white); font-size: 14px;}
+        .copy{text-align: center; padding-top: 50px; color: var(--white);font-size: 14px;}
+        .sicon-1{color: var(--white); margin-right: 20px;}
+        .search-outer{border: 1px solid var(--white); padding: 10px 25px; width: 200px;
+        border-radius: 20px;}
+        .search-outer i{color: var(--white)!important;}
+        hr{border: none;height: 1px; background: #8f8f8f6b;}
+        .fixed {position: fixed;top:0; left:0;width: 100%; background: var(--darkgreen);}
+        
+        ::-webkit-scrollbar {
+          width: 10px;
+          background: var(--white);
+        }
+        
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey;
+          
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: var(--lightgreen);
+        
+        
+        } 
+        
+        
+        .card-body{
+          background-color: lightblue;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+		.registration-form label {
+            font-weight: bold;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="password"],
+        .registration-form textarea {
+            width: 97%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+		
+		
+
+        .registration-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 97%;
+        }
+
+        .registration-form button:hover {
+            background-color: #45a049;
+        }
+
+		/* header responsive */
+        .header {
+			background: var(--darkgreen);
+			overflow: hidden;
+		}
+		
+		.logo {
+			color: var(--white);
+			font-weight: 500;
+			padding: 15px;
+			font-style: italic;
+		}
+		
+		.nav {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			overflow: hidden;
+			background-color: var(--darkgreen);
+		}
+		
+		.nav li {
+			float: left;
+		}
+		
+		.nav li a {
+			display: block;
+			color: var(--white);
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		
+		.nav li a:hover {
+			background-color: var(--lightgreen);
+			color: var(--darkgreen);
+		}
+		
+		.nav-right {
+			float: right;
+		}
+		
+		@media screen and (max-width: 600px) {
+			.nav li {
+				float: none;
+				display: inline-block;
+			}
+			.nav-right {
+				float: none;
+			}
+		}
+		
+		@media only screen and (max-width: 600px) {
+			.container {
+				width: 100%;
+				padding: 0 20px;
+			}
+		
+			.col-3, .col-4, .col-2, .col-6 {
+				width: 100%;
+				float: none;
+			}
+		
+			.nav {
+				width: 100%;
+				text-align: center;
+			}
+		
+			.nav li {
+				float: none;
+				display: inline-block;
+				padding: 10px 0;
+			}
+		
+			.nav li a {
+				padding: 10px 15px;
+			}
+		
+			.logo {
+				padding: 15px 0;
+				text-align: center;
+			}
+		
+			.btn {
+				margin-top: 15px; 
+				float: none;
+			}
+		
+			.content {
+				padding: 50px 20px; 
+			}
+		
+			.heading {
+				font-size: 40px; 
+			}
+		
+			.p1 {
+				width: auto; 
+			}
+		
+			.icon {
+				margin-right: 15px; 
+			}
+		
+			.box {
+				width: 80%; 
+				margin: 0 auto; 
+			}
+		
+			.icon1 {
+				margin-top: 30px; 
+			}
+		
+			.com-p, .green-sec {
+				padding: 30px 20px; 
+			}
+		
+			.foot-menu {
+				text-align: center;
+			}
+		
+			.copy {
+				padding-top: 30px; 
+			}
+		}
+		
+
+		.registration-form{
+			padding-left: 0vmax;
+		}
+		
+
+		
+
+    </style>
+</head>
+<body>
+
+<section class="banner">
+	<header class="sticky">
+		<header class="header">
+		<div class="container">
+			<div class="col-3">
+				<h2 class="logo">TRAKIN-TECH</h2>
+			</div>
+			<div class="col-6">
+				<ul class="nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#62">Features</a></li>
+					<li>
+						<form action="Google Sheet.html">
+						<input class="btn" type="submit" value="Contact Us">
+					</form>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</header>
+		<div class="clearfix"></div>
+	</header>
+		
+		
+			<div class="col-6">
+				<div class="content">
+				<h1 class="heading">Dashboard<br> Component For 
+				 	Your <br>Beautiful Design</h1>
+				 	<p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+				 	<button class="btn" style="float:left;">Get Started</button>
+				 	<div class="clearfix"></div>
+				 	<br><br><br><br>
+				 	<img src="https://cdn-icons-png.flaticon.com/512/6292/6292175.png" class="icon">
+				 	<img src="https://cdn-icons-png.flaticon.com/512/11068/11068821.png" class="icon">
+				 	<img src="https://cdn.icon-icons.com/icons2/2899/PNG/512/dashboard_icon_182989.png" class="icon">
+				</div>
+			</div>
+			<div class="col-6">
+				<br>
+				<img src="dashboard.jpg" class="banner-img">
+			</div>
+			<div class="clearfix"></div>
+		
+			
+		
+		
+</section>
+
+
+
+<section id="62">
+	<br><br><br><br>
+	<div class="container">
+		<h2 class="heading-2">Our All Features You Can Get</h2>
+		<p class="p2">We will provide  some of the best features</p>
+		<div class="col-4">
+			<div class="box active">
+				<i class="fa fa-cloud-download icon1"></i>
+				<br><br>
+				<h2 class="heading-3">Free Download</h2>
+				<br>
+				<p class="p3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply </p>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="box">
+				<i class="fa fa-desktop icon1"></i>
+				<br><br>
+				<h2 class="heading-3">Modern Design</h2>
+				<br>
+				<p class="p3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply </p>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="box">
+				<i class="fa fa-code icon1"></i>
+				<br><br>
+				<h2 class="heading-3">Source Code</h2>
+				<br>
+				<p class="p3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply </p>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+<br><br>
+<section>
+	<br><br><br><br>
+	<div class="container">
+		<div class="col-6">
+			<img src="Register.png" class="com-p">
+		</div>
+		<div class="col-6">
+			<h2 class="heading-4">Let's Register & Get<br> Components with clean<br> Design</h2>
+			<br>
+			<p class="p4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply </p>
+			<form action="Google Sheet.html">
+			<input type="submit" class="btn" style="float:left;" value="Register Now!">
+		</form>
+		</div>
+		<div class="clearfix"></div>
+		<br><br><br><br>
+	</div>
+</section>
+
+<section class="green-sec">
+	<br><br><br><br>
+	<div class="container">
+		
+		<div class="col-6">
+			<h2 class="heading">Get Your Best<br> Components Into The<br> Dashboard Design</h2>
+			<br>
+			<p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply </p>
+			<form action="#registration">
+			<button class="btn" style="float:left;">Register Now!</button>
+		</form>
+		</div>
+		<div class="col-6" style="text-align: center;">
+			<br>
+			<img src="https://cdn.dribbble.com/users/11028122/screenshots/19178608/media/ce73636af80f52aeda9f05e461987fcc.png?resize=400x0" class="com-l" >
+		</div>
+		<div class="clearfix"></div>
+		<br><br><br><br>
+	</div>
+</section><br><br>
+
+<section id="registration">
+    <div class="container">
+        <h2>Register Now</h2>
+        <div class="registration-form">
+            <form action="registration.php" method="post">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section class="green-sec">
+	<br><br><br><br>
+	<div class="container">
+		
+		<div class="col-3">
+			<ul class="foot-menu">
+				<li><h2 class="logo">TRAKIN-TECH</h2></li>
+				<li>
+					<div class="search-outer">
+						<i class="fa fa-envelope"></i>
+						<input type="text" class="search">
+						<i class="fa fa-send"></i>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="col-2">
+			<ul class="foot-menu">
+			</ul>
+		</div>
+		<div class="col-2">
+			<ul class="foot-menu">
+				<li><a href="#"><strong>Company</strong></a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">New</a></li>
+				<li><a href="#">Career</a></li>
+			</ul>
+		</div>
+		<div class="col-2">
+			<ul class="foot-menu">
+				<li><a href="#"><strong>Support</strong></a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">New</a></li>
+				<li><a href="#">Career</a></li>
+			</ul>
+		</div>
+
+		<div class="col-3">
+			<ul class="foot-menu">
+				<li><a href="#"><strong>Social Media</strong></a></li>
+				<li>
+					<i class="fa fa-facebook sicon-1"></i>
+					<i class="fa fa-instagram sicon-1"></i>
+					<i class="fa fa-twitter sicon-1"></i> 
+				</li>
+			</ul>
+		</div>
+
+		<div class="clearfix"></div>
+		<hr>
+		<p class="copy">Copyright 2024 Design by Kaustubh</p>
+		<br><br><br><br>
+	</div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+	$('.box').click(function(){
+    $('.box').removeClass("active");
+    $(this).addClass("active");
+});
+</script>
+<script type="text/javascript">
+	$(window).scroll(function(){
+  var sticky = $('.sticky'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 100) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
+</script>
+</body>
+</html>
